@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Produto por Código de Barras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de Produto</h1>
+        <div class="search-box">
+            <input type="text" id="codigoInput" placeholder="Digite o código de barras (Ex: 7891000002186)" />
+            <button id="searchBtn">Consultar</button>
+        </div>
+
+        <div id="loading" class="hidden">Buscando...</div>
+        <div id="error" class="error hidden"></div>
+
+        <div id="result" class="result hidden">
+            <div class="product-header">
+                <img id="productImage" src="" alt="Imagem do Produto" />
+                <div class="product-title">
+                    <h2 id="productName"></h2>
+                    <p class="brand" id="productBrand"></p>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <div class="detail-item">
+                    <span class="label">Categoria:</span>
+                    <span id="productCategory"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">NCM:</span>
+                    <span id="productNcm"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Descrição NCM:</span>
+                    <span id="productNcmDesc"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">CEST:</span>
+                    <span id="productCest"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Segmento CEST:</span>
+                    <span id="productCestSeg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
