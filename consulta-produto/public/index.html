@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Consulta de Produto</h1>
         <div class="search-box">
-            <input type="text" id="codigoInput" placeholder="Digite o código de barras (Ex: 7891000002186)" />
+            <input type="text" id="codigoInput" placeholder="Digite o código de barras (Ex: 7891000002186)" maxlength="14" oninput="this.value = this.value.replace(/[^0-9]/g, '');" />
             <button id="searchBtn">Consultar</button>
         </div>
 
